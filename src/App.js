@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import AsyncAwait from './components/AsyncAwait';
+import MyForm from './components/MyForm';
+import UseContext from './components/UseContext';
+import UseEffect from './components/UseEffect';
+// import UseReducer from './components/UseReducer';
+import UseRef from './components/UseRef';
+import UseState from './components/UseState';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <UseState/>
+     <UseEffect/>
+     <UseContext/>
+     <AsyncAwait/>
+     <UseRef/>
+     <MyForm/>
+     {/* <UseReducer/> */}
+    </>
   );
 }
 
